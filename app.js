@@ -5,29 +5,9 @@ const albums = require('./albums')
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-/*
-Add a new song
-Add data for more than one artist then add the following endpoint
-Find song by artist id
-Find song by artist name
-*/
-
 app.get('/', (req, res) => {
-    /* GET a songs by their name */
-    // let name = req.query.search
-    // foundStudent = null
 
-    // for (var student of students) {
-    //     for (var studentName of student.name) {
-    //         if (studentName === name) {
-    //             foundStudent = student
-    //             break
-    //         }
-    //     }
-    // }
-    // console.log(req.query)
-
-    //
+    
     if (Object.keys(req.query).length !== 0) {
 
         //Find song by id
